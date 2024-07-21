@@ -85,6 +85,10 @@ set<string> generate(char* dir) {
         for (auto payload1 : payloads1) {
             for (auto payload2 : payloads2) {
                 string standard_payload = payload1 + full_file;
+                string standard_payload2 = payload2 + full_file;
+
+                new_payloads.insert(standard_payload2);
+                new_payloads.insert(standard_payload2 + "%00");
                 new_payloads.insert(standard_payload);
                 new_payloads.insert(standard_payload + "%00");
 
@@ -102,6 +106,10 @@ set<string> generate(char* dir) {
         for (auto payload1 : payloads1) {
             for (auto payload2 : payloads2) {
                 string standard_payload = payload1 + full_file;
+                string standard_payload2 = payload2 + full_file;
+
+                new_payloads.insert(standard_payload2);
+                new_payloads.insert(standard_payload2 + "%00");
                 new_payloads.insert(standard_payload);
                 new_payloads.insert(standard_payload + "%00");
 
