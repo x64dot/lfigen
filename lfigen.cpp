@@ -115,8 +115,12 @@ set<string> generate(char* dir) {
 
                 for (auto payload3 : filter_payloads) {
                     string filter_payload = payload3 + standard_payload;
+                    string filter_payload2 = payload3 + standard_payload2;
+
                     new_payloads.insert(filter_payload);
                     new_payloads.insert(filter_payload + "%00");
+                    new_payloads.insert(filter_payload2);
+                    new_payloads.insert(filter_payload2 + "%00");
                 }
             }
         }
