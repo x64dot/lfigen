@@ -11,7 +11,7 @@ void save_to_file(set<string>& the_payloads, char* file_name);
 
 int main(int argc, char* argv[]) {
     if (argc != 3) {
-        cout << "lfigen v1.1 a simple tool that generates LFI payloads based on your target file/directory.\n";
+        cout << "lfigen v1.1 a simple tool that generates LFI payloads based on your target file.\n";
         cout << "Example: " << argv[0] << " {file/path} {output_filename}\n";
         cout << "2nd Example: " << argv[0] << " /etc/passwd payload.txt\n";
 
